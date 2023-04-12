@@ -1,5 +1,6 @@
 <?php
 
+use App\Providers\ManualServiceProvider;
 use Illuminate\Support\Facades\Facade;
 
 return [
@@ -41,7 +42,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -194,6 +195,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\TelescopeServiceProvider::class,
+
+//        customs
+        ManualServiceProvider::class
 
     ],
 

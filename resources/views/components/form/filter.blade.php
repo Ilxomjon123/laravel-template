@@ -1,8 +1,8 @@
 <form action="">
     {{ $slot }}
-    <th>
-        <button type="submit" class="btn btn-warning btn-sm">
-            <i class="fa fa-filter"></i> Поиск
-        </button>
-    </th>
+
+    <div class="d-flex">
+        <button class="btn btn-primary">Фильтровать</button>
+        <a class="btn btn-warning ml-auto" href="{{ url()->current() }}">Очистить</a>
+    </div>
 </form>

@@ -1,5 +1,6 @@
 <div class="table-responsive">
-    <table class="table table-bordered kv-grid-table table-valign-middle table-striped table-condensed"
+    <table
+        class="table table-bordered kv-grid-table table-valign-middle @if($attributes['striped']!==false)table-striped @endif table-condensed"
         id="{{ $attributes['id'] }}">
         <thead>
             @if (isset($header))
